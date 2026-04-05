@@ -118,7 +118,8 @@ DIV.floorplan
 	background-color: #362f2d;
 }
 
-DIV.dot
+DIV.dot,
+BUTTON.dot
 {
 	z-index: 6;
 	position: absolute;
@@ -127,9 +128,19 @@ DIV.dot
 	height: 22px;
 	width: 22px;
 	background-image: url(dot.gif);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	border: none;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+	font: inherit;
+	-webkit-appearance: none;
+	appearance: none;
 }
 
-DIV.dotHot
+DIV.dotHot,
+BUTTON.dotHot
 {
 	z-index: 6;
 	position: absolute;
@@ -138,6 +149,22 @@ DIV.dotHot
 	height: 22px;
 	width: 22px;
 	background-image: url(dot-hot.gif);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	border: none;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+	font: inherit;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+BUTTON.dot:focus-visible,
+BUTTON.dotHot:focus-visible
+{
+	outline: 2px solid #ffcc00;
+	outline-offset: 2px;
 }
 
 DIV.blackBackdrop
@@ -151,14 +178,15 @@ DIV.blackBackdrop
     Z-INDEX: 2;
 }
 
-APPLET.ptviewer
+/* Pannellum container (replaces Java PTViewer applet) */
+#panorama.pannellumTour
 {
-    BACKGROUND-COLOR: black;
+	BACKGROUND-COLOR: black;
 	POSITION: absolute;
 	TOP: 1px;
-    LEFT: 79px;
+	LEFT: 79px;
 	HEIGHT: 180px;
-    WIDTH: 360px;
+	WIDTH: 360px;
 	Z-INDEX: 8;
 }
 

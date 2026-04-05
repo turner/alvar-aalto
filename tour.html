@@ -1,49 +1,36 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<html>
-	<head>
-		<title>Nordic House Tour</title>
-		<script language="JavaScript" src="code/tour.js"></script>
-		<link rel="stylesheet" href="tour.css" type="text/css">
-	</head>
-	<body onload="dotHandler(document.all.myAtriumDot, 0)">
-		<map name="tour_navigation_map">
-			<area shape="RECT" coords="0,0,70,26" href="index.html" target="_top">
-			<area shape="RECT" coords="105,0,161,26" href="intro.html" target="_top">
-			<area shape="RECT" coords="191,0,244,26" href="tile.html" target="_top">
-			<area shape="RECT" coords="269,0,339,26" href="terrace.html" target="_top">
-			<area shape="RECT" coords="369,0,434,26" href="aud_ceiling.html" target="_top">
-			<area shape="RECT" coords="458,0,517,26" href="tour.html" target="_top">
-			<area shape="RECT" coords="0,0,517,26" nohref>
-			<div id="myBackdrop" class="tourBackdrop">
-				<div id="myPanoramaBackdrop" class="panoramaBackdrop">
-				<APPLET id="myPTViewer" width="360" height="180" code="ptviewer.class" archive="java/ptviewer.jar" class="ptviewer" mayscript="true" VIEWASTEXT>
-						<PARAM NAME="auto" VALUE="0.5">
-						<PARAM NAME="barcolor" VALUE="ffffff">
-						<PARAM NAME="bar_height" VALUE="6">
-						<PARAM NAME="bar_width" VALUE="240">
-						<PARAM NAME="wait" VALUE="image/loading-panorama.gif">
-						<PARAM NAME="bgcolor" VALUE="666666">
-						<PARAM NAME="pano2" VALUE="{file=pano/aud_lib.jpg}">
-						<PARAM NAME="pano1" VALUE="{file=pano/auditorium.jpg}">
-						<PARAM NAME="pano0" VALUE="{file=pano/atrium.jpg}">
-						<PARAM NAME="waittime" VALUE="500">
-						<!--
-						<PARAM NAME="class" VALUE="ptviewer">
-						-->
-						<PARAM NAME="bar_y" VALUE="92">
-						<PARAM NAME="bar_x" VALUE="64">
-					</APPLET>
-				</div>
-				<div id="myFloorplan" class="floorplan">
-					<div id="myAuditoriumDot" title="Panorama at center of auditorium" onclick="dotHandler(this, 1)" class="dot" style="LEFT:282px; TOP:150px"></div>
-					<div id="myAudLibDot" title="Panorama at boundary between library and auditorium" onclick="dotHandler(this, 2)" class="dot" style="LEFT:230px; TOP:175px"></div>
-					<div id="myAtriumDot" title="Panorama in atrium" onclick="dotHandler(this, 0)" class="dot" style="LEFT:317px; TOP:220px;"></div>
-					<div id="myHelp" class="tourHelp">Click on a dot to view an interactive panorama 
-						from that position. Click and drag the panorama to look in different 
-						directions.</div>
-				</div>
-				<img id="myNavigationImage" src="navigation.gif" border="0" usemap="#tour_navigation_map" class="navigationImage">
-			</div>
-		</map>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Nordic House Tour</title>
+	<link rel="stylesheet" href="vendor/pannellum/pannellum.css">
+	<link rel="stylesheet" href="tour.css" type="text/css">
+</head>
+<body>
+	<map name="tour_navigation_map">
+		<area shape="rect" coords="0,0,70,26" href="index.html" target="_top" alt="Home">
+		<area shape="rect" coords="105,0,161,26" href="intro.html" target="_top" alt="Introduction">
+		<area shape="rect" coords="191,0,244,26" href="tile.html" target="_top" alt="Tile">
+		<area shape="rect" coords="269,0,339,26" href="terrace.html" target="_top" alt="Terrace">
+		<area shape="rect" coords="369,0,434,26" href="aud_ceiling.html" target="_top" alt="Auditorium ceiling">
+		<area shape="rect" coords="458,0,517,26" href="tour.html" target="_top" alt="Virtual tour">
+		<area shape="rect" coords="0,0,517,26" nohref alt="">
+	</map>
+	<div id="myBackdrop" class="tourBackdrop">
+		<div id="myPanoramaBackdrop" class="panoramaBackdrop">
+			<div id="panorama" class="pannellumTour"></div>
+		</div>
+		<div id="myFloorplan" class="floorplan">
+			<button type="button" id="myAuditoriumDot" class="dot" title="Panorama at center of auditorium" aria-label="Panorama at center of auditorium" style="left:282px;top:150px"></button>
+			<button type="button" id="myAudLibDot" class="dot" title="Panorama at boundary between library and auditorium" aria-label="Panorama at boundary between library and auditorium" style="left:230px;top:175px"></button>
+			<button type="button" id="myAtriumDot" class="dot" title="Panorama in atrium" aria-label="Panorama in atrium" style="left:317px;top:220px"></button>
+			<div id="myHelp" class="tourHelp">Click on a dot to view an interactive panorama
+				from that position. Click and drag the panorama to look in different
+				directions.</div>
+		</div>
+		<img id="myNavigationImage" src="navigation.gif" width="518" height="27" usemap="#tour_navigation_map" class="navigationImage" alt="Site navigation">
+	</div>
+	<script src="vendor/pannellum/pannellum.js"></script>
+	<script src="code/tour.js"></script>
+</body>
 </html>
