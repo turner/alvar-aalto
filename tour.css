@@ -1,0 +1,235 @@
+
+BODY
+{
+	color : White;
+    BACKGROUND-COLOR: #999999;
+}
+
+TABLE
+{
+	font-family : Verdana;
+	font-size : 10pt;
+}
+
+IMG.tilePageText
+{
+	POSITION: absolute;
+	TOP: 0px;
+    LEFT: 0px;
+	HEIGHT:573px;
+    WIDTH:254px;
+    Z-INDEX: 4;
+}
+
+IMG.tilePageImage
+{
+	POSITION: absolute;
+	TOP: 0px;
+    LEFT: 254px;
+	HEIGHT: 573px;
+    WIDTH: 264px;
+    Z-INDEX: 4;
+}
+
+IMG.titlePageText
+{
+	POSITION: absolute;
+	TOP: 0px;
+    LEFT: 0px;
+	HEIGHT: 68px;
+    WIDTH: 518px;
+    Z-INDEX: 8;
+}
+
+IMG.titlePageImage
+{
+	POSITION: absolute;
+	TOP: 68px;
+    LEFT: 0px;
+	HEIGHT: 506px;
+    WIDTH: 518px;
+    Z-INDEX: 8;
+}
+
+
+IMG.audCeilingText
+{
+	POSITION: absolute;
+	TOP: 0px;
+    LEFT: 0px;
+	HEIGHT: 574px;
+    WIDTH: 264px;
+    Z-INDEX: 4;
+}
+
+IMG.audCeilingImage
+{
+	POSITION: absolute;
+	TOP: 70px;
+    LEFT: 280px;
+	HEIGHT: 434px;
+    WIDTH: 222px;
+    Z-INDEX: 4;
+}
+
+DIV.tourBackdrop
+{
+    BACKGROUND-COLOR: #362F2D;
+	POSITION: absolute;
+	TOP: 15px;
+    LEFT: 8px;
+	HEIGHT: 601px;
+    WIDTH: 518px;
+    Z-INDEX: 2;
+}
+
+DIV.tourHelp
+{
+	font-family : Verdana;
+	font-size : 8pt;
+	POSITION: absolute;
+	TOP: 285px;
+    LEFT: 30px;
+	HEIGHT: 60px;
+    WIDTH: 160px;
+    Z-INDEX: 10;
+}
+
+DIV.tourMenubar
+{
+	z-index: 2;
+	left: 8px;
+	width: 518px;
+	position: absolute;
+	top: 15px;
+	height: 601px;
+	background-color: #999933;
+}
+
+DIV.floorplan
+{
+	z-index: 4;
+	left: 0px;
+	background-image: url(floorplan.gif);
+	width: 518px;
+	position: absolute;
+	top: 210px;
+	height: 354px;
+	background-color: #362f2d;
+}
+
+DIV.dot
+{
+	z-index: 6;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 22px;
+	width: 22px;
+	background-image: url(dot.gif);
+}
+
+DIV.dotHot
+{
+	z-index: 6;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 22px;
+	width: 22px;
+	background-image: url(dot-hot.gif);
+}
+
+DIV.blackBackdrop
+{
+    BACKGROUND-COLOR: black;
+	POSITION: absolute;
+	TOP: 15px;
+    LEFT: 8px;
+	HEIGHT: 601px;
+    WIDTH: 518px;
+    Z-INDEX: 2;
+}
+
+APPLET.ptviewer
+{
+    BACKGROUND-COLOR: black;
+	POSITION: absolute;
+	TOP: 1px;
+    LEFT: 79px;
+	HEIGHT: 180px;
+    WIDTH: 360px;
+	Z-INDEX: 8;
+}
+
+DIV.panorama
+{
+    BACKGROUND-COLOR: black;
+	POSITION: absolute;
+	TOP: 0px;
+    LEFT: 79px;
+	HEIGHT: 180px;
+    WIDTH: 360px;
+    Z-INDEX: 6;
+}
+
+DIV.panoramaBackdrop
+{
+    BACKGROUND-COLOR: black;
+	POSITION: absolute;
+	TOP: 20px;
+    LEFT: 0px;
+	HEIGHT: 182px;
+    WIDTH: 518px;
+    Z-INDEX: 4;
+}
+
+IMG.navigationImage
+{
+	POSITION: absolute;
+	TOP: 574px;
+    LEFT: 0px;
+	HEIGHT: 27px;
+    WIDTH: 518px;
+    Z-INDEX: 6;
+}
+
+IMG.terraceImage
+{
+	POSITION: absolute;
+	TOP: 0px;
+    LEFT: 0px;
+	HEIGHT: 574px;
+    WIDTH: 518px;
+    Z-INDEX: 6;
+}
+
+A
+{
+    COLOR: white;
+	TEXT-DECORATION: none;
+}
+
+A:visited
+{
+    COLOR: white;
+	TEXT-DECORATION: none;
+}
+
+A:hover
+{
+    COLOR: yellow;
+	TEXT-DECORATION: underline;
+}
+
+A:link
+{
+COLOR: white;
+TEXT-DECORATION: none;
+}
+
+A:active
+{
+    COLOR: white;
+	TEXT-DECORATION: none;
+}
